@@ -30,8 +30,12 @@ public class documento {
 	
 	@Override
 	public String toString() {
-		return "documento [Nombre=" + Nombre.toString() + ", Apellidos=" + Apellidos.toString() + ", tlf=" + tlf.toString() + ", correoElectronico="
-				+ correoElectronico.toString() + "]";
+		String palabra = new String();
+		palabra = "";
+		for (int i = 0; i < Nombre.size(); i++) {
+			palabra += "Contacto ["+(i+1)+"] { Nombre: "+Nombre.get(i)+", Apellido: "+Apellidos.get(i)+", Tlf: "+tlf.get(i)+", Correo: "+correoElectronico.get(i)+"}."+System.getProperty("line.separator");
+		}
+		return palabra;
 	}
 	
 	
