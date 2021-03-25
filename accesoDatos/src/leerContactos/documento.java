@@ -16,8 +16,6 @@ public final class documento {
 	
 	static String palabra = new String();
 
-	// Constructores
-
 	// metodo principal
 	public static void LADatos(FileReader archivo) throws IOException {
 		BufferedReader br = null;
